@@ -1,7 +1,7 @@
 body {
   background-color: rgb(60,60,60);
 }
-/*Desktop Navbar Start*/
+/*Desktop & Laptops*/
 @media only screen and (min-width: 1224px) {
   #navbar-mobile {
     display: none !important;
@@ -24,182 +24,60 @@ body {
   margin-bottom: 200px;
   margin-left: 41%;
   }
-  .hsi-head {
-    position: static;
-    margin-left:39%;
+  .page-heads {
+    position: relative;
     z-index: 2;
+    font-size: 70px;
     padding: 10px;
-    font-size: 30px;
+    margin: 190px 0 0;
     transform: translateY(-25%);
-    margin-top: 190px;
-  }
-  .esi-head {
-    position: static;
-    margin-left: 875px;
-    z-index: 2;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(-25%);
-    margin-top: 190px;
-  }
-  .si-head {
-    position: static;
-    margin-left: 1050px;
-    z-index: 2;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(-25%);
-    margin-top: 190px;
-  }
-  .l-head {
-    position: static;
-    margin-left: 1075px;
-    z-index: 2;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(-25%);
-    margin-top: 190px;
-  }
-  .boe-head {
-    position: static;
-    margin-left: 925px;
-    z-index: 2;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(-25%);
-    margin-top: 190px;
-  }
-  .fo-head {
-    position: static;
-    margin-left: 1150px;
-    z-index: 2;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(-25%);
-    margin-top: 190px;
-  }
-  .fi-head {
-    position: static;
-    margin-left: 1100px;
-    z-index: 2;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(-25%);
-    margin-top: 190px;
-  }
-  .e-head {
-    position: static;
-    margin-left: 1000px;
-    z-index: 2;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(-25%);
-    margin-top: 190px;
-  }
-  .tix-head {
-    position: static;
-    margin-left: 1035px;
-    z-index: 2;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(-25%);
-    margin-top: 190px;
-  }
-  .a-head {
-    position: static;
-    margin-left: 1115px;
-    z-index: 2;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(-25%);
-    margin-top: 190px;
-  }
-  .s-head {
-    position: static;
-    margin-left: 1050px;
-    z-index: 2;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(-25%);
-    margin-top: 190px;
-  }
-  .p-head {
-    position: static;
-    margin-left: 1090px;
-    z-index: 2;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(-25%);
-    margin-top: 190px;
-  }
-  .fbla-head {
-    position: static;
-    margin-left: 1140px;
-    z-index: 2;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(-25%);
-    margin-top: 190px;
-  }
-  .jr-head {
-    position: static;
-    margin-left: 1125px;
-    z-index: 2;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(-25%);
-    margin-top: 190px;
-  }
-  .fccla-head {
-    position: static;
-    margin-left: 1115px;
-    z-index: 2;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(-25%);
-    margin-top: 190px;
-  }
-  .siscc-head {
-    position: static;
-    margin-left: 1120px;
-    z-index: 2;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(-25%);
-    margin-top: 190px;
-  }
-  .stuco-head {
-    position: static;
-    margin-left: 1115px;
-    z-index: 2;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(-25%);
-    margin-top: 190px;
-  }
-  .d-head {
-    position: static;
-    margin-left: 1125px;
-    z-index: 2;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(-25%);
-    margin-top: 190px;
-  }
-    .c-head {
-    position: static;
-    margin-left: 1125px;
-    z-index: 2;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(-25%);
-    margin-top: 190px;
   }
   .Line {
     position: relative;
     z-index: 1;
+    width: 60%;
+    margin: 0;
   }
 }
+/*Phones & Tablets*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+  #navbar-desktop {
+    display: none !important;
+  }
+  .navbar {
+    display: flex;
+  }
+  .navbar a {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .navbar button {
+      font-size: 2vw;
+      position: absolute;
+      right: 0;
+  }
+  .Main-Header {
+  margin-left: 300px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  }
+  .page-heads {
+    position: relative;
+    z-index: 2;
+    font-size: 70px;
+    padding: 10px;
+    margin: 190px 0 0;
+    transform: translateY(-25%);
+  }
+  .Line {
+    position: relative;
+    z-index: 1;
+    width: 60%;
+    margin: 0;
+  }
+}
+/*Desktop Navbar Start*/
 .Logo{
   border-radius: 10px;
   margin-left: 10px;
@@ -254,224 +132,6 @@ body {
 .hidden-contents ul {
   background-color: #5b0f01;
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 680px) {
-  #navbar-desktop {
-    display: none !important;
-  }
-  .navbar {
-    display: flex;
-  }
-  .navbar a {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .navbar button {
-      font-size: 2vw;
-      position: absolute;
-      right: 0;
-  }
-  .Main-Header {
-  margin-left: 300px;
-  margin-top: 150px;
-  margin-bottom: 150px;
-  }
-  }
-    .hsi-head {
-    position: relative;
-    margin-left: 250px;
-    z-index: 2;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(-25%);
-    margin-top: 190px;
-    width: fit-content;
-  }
-  .esi-head {
-    position: relative;
-    margin-left: 150px;
-    z-index: 2;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(-25%);
-    margin-top: 190px;
-    width: fit-content;
-  }
-  .si-head {
-    position: relative;
-    margin-left: 315px;
-    z-index: 2;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(-25%);
-    margin-top: 190px;
-    width: fit-content;
-  }
-  .l-head {
-    position: relative;
-    margin-left: 325px;
-    z-index: 2;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(-25%);
-    margin-top: 190px;
-    width: fit-content;
-  }
-  .boe-head {
-    position: relative;
-    margin-left: 200px;
-    z-index: 2;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(-25%);
-    margin-top: 190px;
-    width: fit-content;
-  }
-  .fo-head {
-    position: relative;
-    margin-left: 375px;
-    z-index: 2;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(-25%);
-    margin-top: 190px;
-    width: fit-content;
-  }
-  .fi-head {
-    position: relative;
-    margin-left: 350px;
-    z-index: 2;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(-25%);
-    margin-top: 190px;
-    width: fit-content;
-  }
-  .e-head {
-    position: relative;
-    margin-left: 275px;
-    z-index: 2;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(-25%);
-    margin-top: 190px;
-    width: fit-content;
-  }
-  .tix-head {
-    position: relative;
-    margin-left: 300px;
-    z-index: 2;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(-25%);
-    margin-top: 190px;
-    width: fit-content;
-  }
-  .a-head {
-    position: relative;
-    margin-left: 350px;
-    z-index: 2;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(-25%);
-    margin-top: 190px;
-    width: fit-content;
-  }
-  .s-head {
-    position: relative;
-    margin-left: 325px;
-    z-index: 2;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(-25%);
-    margin-top: 190px;
-    width: fit-content;
-  }
-  .p-head {
-    position: relative;
-    margin-left: 350px;
-    z-index: 2;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(-25%);
-    margin-top: 190px;
-    width: fit-content;
-  }
-  .fbla-head {
-    position: relative;
-    margin-left: 385px;
-    z-index: 2;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(-25%);
-    margin-top: 190px;
-    width: fit-content;
-  }
-  .jr-head {
-    position: relative;
-    margin-left: 375px;
-    z-index: 2;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(-25%);
-    margin-top: 190px;
-    width: fit-content;
-  }
-  .fccla-head {
-    position: relative;
-    margin-left: 375px;
-    z-index: 2;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(-25%);
-    margin-top: 190px;
-    width: fit-content;
-  }
-  .siscc-head {
-    position: relative;
-    margin-left: 385px;
-    z-index: 2;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(-25%);
-    margin-top: 190px;
-    width: fit-content;
-  }
-  .stuco-head {
-    position: relative;
-    margin-left: 375px;
-    z-index: 2;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(-25%);
-    margin-top: 190px;
-    width: fit-content;
-  }
-  .d-head {
-    position: relative;
-    margin-left: 375px;
-    z-index: 2;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(-25%);
-    margin-top: 190px;
-    width: fit-content;
-  }
-  .c-head {
-    position: relative;
-    margin-left: 340px;
-    z-index: 2;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(-25%);
-    margin-top: 190px;
-    width: fit-content;
-  }
-  .Line {
-    position: relative;
-    z-index: 1;
-  }
-}
 .hidden-contents ul {
   background-color: #5b0f01;
   width: fit-content;
@@ -516,6 +176,12 @@ body {
   width: 75px;
   height: 75px;
 }
+.Header-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
 .Main-Header {
   color: white;
   font-family: Verdana,Geneva,sans-serif; 
@@ -551,6 +217,7 @@ body {
     border-color: #5b0f01;
     margin-bottom: 100px;
   }
+
 .Info {
   color: white;
   font-family: Verdana,Geneva,sans-serif;
