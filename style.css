@@ -2,9 +2,12 @@ body {
   background-color: rgb(60,60,60);
 }
 /*Desktop & Laptops*/
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 1100px) {
   #navbar-mobile {
     display: none !important;
+  }
+  #navbar-desktop {
+    display: inline-block;
   }
   .navbar {
     font-size: 1vw;
@@ -15,6 +18,9 @@ body {
   .navbar ul li:last-child {
     margin-left: auto;
     margin-right: 10px;
+  }
+  .navbar button {
+      font-size: 1vw;
   }
   .hidden-contents {
     font-size: 1vw;
@@ -40,9 +46,12 @@ body {
   }
 }
 /*Phones & Tablets*/
-@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+@media only screen and (min-width: 320px) and (max-width: 1100px) {
   #navbar-desktop {
     display: none !important;
+  }
+  #navbar-mobile {
+    display: block;
   }
   .navbar {
     display: flex;
@@ -53,7 +62,7 @@ body {
     transform: translate(-50%, -50%);
   }
   .navbar button {
-      font-size: 2vw;
+      font-size: clamp(16px, 2vw, 24px);
       position: absolute;
       right: 0;
   }
@@ -120,9 +129,8 @@ body {
 }
 .navbar button {
   color: white;
-  font-family: Lucida Console,Lucida Sans Typewriter,monaco,Bitstream Vera Sans Mono,monospace;
+  font-family: Verdana,Geneva,sans-serif; 
   padding: 0px;
-  font-size: 1vw;
   border: none;
   background: none;
 }
