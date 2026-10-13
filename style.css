@@ -121,6 +121,7 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   height: fit-content;
+  font-family: Verdana,Geneva,sans-serif;
   white-space: nowrap;
   color: white;
   text-decoration: none;
@@ -129,7 +130,7 @@ body {
 }
 .navbar button {
   color: white;
-  font-family: Verdana,Geneva,sans-serif; 
+  font-family: Verdana,Geneva,sans-serif;
   padding: 0px;
   border: none;
   background: none;
