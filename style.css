@@ -202,17 +202,6 @@ body {
   width: 75px;
   height: 75px;
 }
-.Daily-Pictures{
-  position: relative;
-  z-index: 1;
-  background-color: rgb(95, 95, 95);
-  border-radius: 10px;
-}
-.Daily-Pictures img {
-  height: 40vw;
-  margin-left: 20%;
-  padding: 2% 0px;
-}
 .Header-Container {
   display: flex;
   flex-direction: column;
@@ -281,8 +270,44 @@ body {
   padding-inline: 5px;
   border-width: 4px;
 }
+.Daily-Pictures{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  z-index: 1;
+  background-color: rgb(95, 95, 95);
+  border-radius: 10px;
+}
+.hidden-photos {
+  height: 40vw;
+  padding: 2% 0px;
+}
 #arrows {
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vw;
+}
+#left-arrow, #right-arrow {
+  position: absolute;
+  top: 37%;
+  flex-shrink: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+#left-arrow {
+  left: 0;
+}
+#right-arrow {
+  right: 0;
+}
+.hidden-photos {
+  display: none;
+}
+.hidden-photos.active {
+  display: block;
 }
 .Ender {
   color: #5b0f01;
