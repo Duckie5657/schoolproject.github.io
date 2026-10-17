@@ -177,30 +177,29 @@ body {
 .Media-Container {
   flex-direction: column;
   background-color: #5b0f01;
-  opacity: 0.5;
+  opacity: 0.75;
   position: absolute;
   z-index: 2;
   color: white;
   font-family: Verdana,Geneva,sans-serif;
-  padding: 5px 10px;
   border-radius: 10px;
-  width: fit-content;
-  height: fit-content;
+  height: 8vw;
+  width: 16vw;
 }
 .Media-Container h3 {
   text-align: center;
+  font-size: .9vw;
 }
 .Media-Images {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  width: 100%;
   flex-direction: row;
 }
 .Media-Images img {
-  width: 75px;
-  height: 75px;
+  width: 3.6vw;
+  height: 3.6vw;
 }
 .Header-Container {
   display: flex;
@@ -301,6 +300,7 @@ body {
   top: 37%;
   flex-shrink: 0;
   cursor: pointer;
+  border-style: none;
   background: none;
   z-index: 2;
 }
