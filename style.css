@@ -269,6 +269,12 @@ body {
   padding-inline: 5px;
   border-width: 4px;
 }
+.club-photos {
+  height: 50vw;
+  width: 75vw;
+  border-radius: 20px;
+  margin-left: 10vw;
+}
 .Daily-Pictures{
   display: flex;
   position: relative;
