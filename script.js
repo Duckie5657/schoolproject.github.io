@@ -1,6 +1,11 @@
+        //More btn
         const button = document.getElementById("navbar-button")
         const textelms = document.querySelectorAll(".hidden-contents")
         const isHidden = localStorage.getItem("contentsHidden") == "true";
+        //Btn element
+        const btn = document.getElementById("btn")
+        const textelms2 = document.querySelectorAll(".hidden-contents2")
+        const isHidden2 = localStorage.getItem("contentsHidden2") == "false";
         //Slides
         const leftarrow = document.getElementById("left-arrow")
         const rightarrow = document.getElementById("right-arrow")
@@ -61,10 +66,8 @@
         })
       }
 
-        console.log(textelms);
-        console.log(textelms.length);
         //More
-        if(isHidden) {
+        if(button) {
           textelms.forEach(textelm => {
             textelm.classList.add("hidden")
           })}
@@ -76,6 +79,22 @@
 
           localStorage.setItem("contentsHidden" ,
             textelms[0].classList.contains("hidden")
+          )
+        })
+        }
+        //btn for inside the page
+        if(isHidden2) {
+          textelms2.forEach(textelm => {
+            textelm.classList.add("hidden2")
+          })}
+        if(btn) {
+        btn.addEventListener("click", function() {
+            textelms2.forEach(textelm => {
+            textelm.classList.toggle("hidden2");
+          })
+
+          localStorage.setItem("contentsHidden2" ,
+            textelms[0].classList.contains("hidden2")
           )
         })
         }
