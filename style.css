@@ -201,6 +201,12 @@
   align-items: center;
   width: 100%;
 }
+.Header-Container h2{
+  font-family: Verdana,Geneva,sans-serif;
+}
+.Header-Container a {
+  text-decoration: none;
+}
 .Main-Header {
   color: white;
   font-family: Verdana,Geneva,sans-serif;
@@ -438,4 +444,17 @@ body.drkmdfalse {
   margin-left: 15vw;
   margin-right: 15vw;
   padding: 15px;
+}
+.forms {
+  width: 25vw;
+  height: 125vw;
+  margin-left: 37vw;
+}
+.hidden2 {
+  display: none !important;
+}
+#btn {
+  padding: 0px;
+  border: none;
+  background: none;
 }
