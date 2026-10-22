@@ -322,7 +322,7 @@
   display: block;
 }
 /*dark mode*/
-body.drkmdactive .navbar ul,  
+body.drkmdactive .navbar ul,
 body.drkmdactive .navbar{
   background-color: #2f2f33 !important;
 }
@@ -333,7 +333,7 @@ body.drkmdactive .hidden-contents ul {
   background-color: #2f2f33 !important;
 }
 body.drkmdactive {
-  background-color: #1b1b1c !important;
+  background-color: #272729 !important;
 }
 body.drkmdfalse .hidden-contents ul {
   background-color: #f5f5ff !important;
@@ -341,7 +341,7 @@ body.drkmdfalse .hidden-contents ul {
 body.drkmdfalse .Daily-Pictures {
   background-color: rgb(95, 95, 95);
 }
-body.drkmdfalse .navbar ul, 
+body.drkmdfalse .navbar ul,
 body.drkmdfalse .navbar {
   background-color: #f5f5ff !important;
 }
@@ -433,21 +433,21 @@ body.drkmdfalse {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1px;
   flex-direction: row;
 }
 .calendars h1 {
   color: white;
   font-family: Verdana,Geneva,sans-serif;
   background-color: #5b0f01;
+  max-width: 200px;
   border-radius: 10px;
-  margin-left: 15vw;
+  margin-left: 11vw;
   margin-right: 15vw;
   padding: 15px;
 }
 .forms {
   width: 50vw;
-  height: 150vw;
+  height: 200vw;
   margin-left: 25vw;
 }
 .hidden2 {
@@ -457,4 +457,7 @@ body.drkmdfalse {
   padding: 0px;
   border: none;
   background: none;
+}
+#navbar-button:active a{
+  color: #f5f5f5;
 }
